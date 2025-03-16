@@ -1,7 +1,7 @@
 import { test, expect } from "@playwright/test";
 import Homepage from "../pages/home.js"; // Adjust the path if necessary
 import exp from "constants";
-import Login_or_SignUp from "../pages/Login_or_SignUp.js";
+import Login_or_SignUp from "../pages/login_or_signUp.js";
 import Signup from "../pages/signupform.js";
 import Delete_account from "../pages/delete_account.js";
 
