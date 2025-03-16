@@ -20,7 +20,7 @@ jobs:
     - name: Install Playwright Browsers
       run: npx playwright install --with-deps
     - name: Run a specific test spec with Chromium  
-      run: npx playwright test Naukri_tests 01_Updating_Resume.spec.js --project=chromium
+      run: npx playwright test Naukri_tests 01_Updating_Resume.spec.js --project=chromium --headless
     - uses: actions/upload-artifact@v4
       if: ${{ !cancelled() }}
       with:
