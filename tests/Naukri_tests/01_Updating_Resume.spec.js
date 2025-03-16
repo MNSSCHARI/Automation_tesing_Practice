@@ -21,7 +21,7 @@ test.describe("Naukri Application", () => {
     await page.getByRole("link", { name: "View profile" }).click();
 
     // **Correct File Path**
-    const filePath = "C:/Users/91918/Playwright_Auto_Vs/tests/Naukari_tests/Srinivas_Resume.docx";
+    const filePath = "C:/Users/91918/Playwright_Auto_Vs/tests/Naukri_tests/Srinivas_Resume.docx";
 
     console.log("Using File Path:", filePath);
 

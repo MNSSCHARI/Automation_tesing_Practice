@@ -4,6 +4,8 @@ on:
     branches: [ main, master ]
   pull_request:
     branches: [ main, master ]
+  schedule:
+  - cron: '30 5 * * *'  # Runs daily at 5:30 AM UTC (11:00 AM IST)
 jobs:
   test:
     timeout-minutes: 60
@@ -17,8 +19,8 @@ jobs:
       run: npm ci
     - name: Install Playwright Browsers
       run: npx playwright install --with-deps
-    - name: Run Playwright tests
-      run: npx playwright test
+    - name: Run a specific test spec with Chromium  
+      run: npx playwright test Naukri_tests 01_Updating_Resume.spec.js --project=chromium
     - uses: actions/upload-artifact@v4
       if: ${{ !cancelled() }}
       with:
