@@ -34,7 +34,7 @@ export default defineConfig({
     trace: 'retain-on-failure',
     slowMo: 2000,
     timeout: 50000,
-    headless: false,
+    headless: true,
     screenshot:'only-on-failure',
   },
 
