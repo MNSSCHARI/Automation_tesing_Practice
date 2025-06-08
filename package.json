@@ -8,11 +8,7 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
-<<<<<<< HEAD
-    "@playwright/test": "^1.50.1",
-=======
     "@playwright/test": "^1.52.0",
->>>>>>> 5893739 (Latest Changes)
     "@types/node": "^22.13.4"
   }
 }
