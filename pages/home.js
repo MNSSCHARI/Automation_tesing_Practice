@@ -17,6 +17,12 @@ class Homepage{
     delete_acc(){
         return this.page.getByText('Delete Account');
     }
+    logout_btn(){
+    return this.page.locator('//a[@href="/logout"]');
+    }
+    contactus_btn(){
+        return this.page.locator('[href="/contact_us"]');
+    }
 
 }   
 export default Homepage;

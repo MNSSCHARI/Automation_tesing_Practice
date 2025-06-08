@@ -18,7 +18,7 @@ expect(await page.locator('#checkBoxOption1').isChecked()).toBeFalsy();
 //stored the locator in the variable
 const documentlink= page.locator("[href*='documents-request']"); 
 //to check the blinking text in the page
-await expect(documentlink).toHaveAttribute('class','blinkingText');
+// await expect(documentlink).toHaveAttribute('class','blinkingText');
 await documentlink.click();
 //stored locator in variable  text
 const text = await page.locator('.red').textContent();

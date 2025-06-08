@@ -65,6 +65,7 @@ test('nth elemnts', async ({ browser }) => {
     //to create a child page from the main page
     const Newpage = await Context.waitForEvent('page');
     const item1 = Newpage.locator("[href*='cypress-modern-automation-testing-from-scratch-framework']");
+    await Newpage.waitForTimeout(3000);
     await item1.first().click();
     // await page.pause();
 });
