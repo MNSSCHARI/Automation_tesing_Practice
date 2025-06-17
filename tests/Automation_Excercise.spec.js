@@ -17,7 +17,7 @@ test.describe('Automation practice', () => {
         const login_or_sign =new Login_or_SignUp(page);
         await expect(page.locator('[class="signup-form"] h2')).toBeVisible();
         await login_or_sign.signupname_field().fill("srinivas.machavaram");
-        await login_or_sign.signupemail_field().fill("srinivas11@gmail.com");
+        await login_or_sign.signupemail_field().fill("srinivas12@gmail.com");
         await login_or_sign.signupbtn().click();
     //signup details page
         const signup_form = new Signup(page);
