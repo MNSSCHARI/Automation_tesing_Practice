@@ -17,7 +17,7 @@ test.describe('Automation practice', () => {
         const login_or_sign =new Login_or_SignUp(page);
         await expect(page.locator('[class="signup-form"] h2')).toBeVisible();
         await login_or_sign.signupname_field().fill("srinivas.machavaram");
-        await login_or_sign.signupemail_field().fill("srinivas12@gmail.com");
+        await login_or_sign.signupemail_field().fill("srinivas11@gmail.com");
         await login_or_sign.signupbtn().click();
     //signup details page
         const signup_form = new Signup(page);
@@ -72,7 +72,7 @@ test.describe('Valid', () => {
     //login or signup_page
         const login_or_sign =new Login_or_SignUp(page);
         await expect(page.locator('[class="login-form"] h2')).toBeVisible();
-        await login_or_sign.loginemail_field().fill("srinivas10@gmail.com");
+        await login_or_sign.loginemail_field().fill("srinivas12@gmail.com");
         await login_or_sign.password_field().fill("Mnsschari@1");
         await login_or_sign.loginbtn().click();
         
@@ -135,7 +135,7 @@ test.describe('Logout', ()=>{
         //imported Login or SignUp class 
         const login_sign = new Login_or_SignUp(page);
         await expect(page.getByText('Login to your account')).toBeVisible();
-        await login_sign.loginemail_field().fill('srinivas11@gmail.com');
+        await login_sign.loginemail_field().fill('srinivas12@gmail.com');
         await login_sign.password_field().fill('Mnsschari@1');
         await login_sign.loginbtn().click();
         //Login completed and try to logout
@@ -159,7 +159,7 @@ test.describe('Existing Email', ()=>{
         //imported Login or SignUp class 
         const login_sign = new Login_or_SignUp(page);
         await expect(page.getByText('New User Signup!')).toBeVisible();
-        await login_sign.signupemail_field().fill('srinivas11@gmail.com');
+        await login_sign.signupemail_field().fill('srinivas12@gmail.com');
         await login_sign.signupname_field().fill('Mnsschari');
         await login_sign.signupbtn().click();
         await expect(page.getByText('Email Address already exist!')).toBeVisible();

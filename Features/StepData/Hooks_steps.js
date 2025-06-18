@@ -1,6 +1,6 @@
 import { Given, When, Then, Before, After, BeforeStep, AfterStep, BeforeAll, AfterAll } from '@cucumber/cucumber';
 
-Before(function () {
+Before("@regression", function () {
   // This will run before each scenario
   console.log('Before hook executed');
 });

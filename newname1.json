@@ -1,0 +1,76 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "tags-feature;this-is-a-scernarion--where-we-will-test-how-tags-are-working",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "This is a scernarion  where we will test how tags are working",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "login into a sample webpage",
+            "match": {
+              "location": "file:\\A:\\Playwright_Learning\\Playwright_Automation_Tesing-main\\Features\\StepData\\Tags_steps.js:2"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3452099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "User in  login page",
+            "match": {
+              "location": "file:\\A:\\Playwright_Learning\\Playwright_Automation_Tesing-main\\Features\\StepData\\Tags_steps.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2283697
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "User should be able to see the login form",
+            "match": {
+              "location": "file:\\A:\\Playwright_Learning\\Playwright_Automation_Tesing-main\\Features\\StepData\\Tags_steps.js:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 959098
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 256099
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 2
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "tags-feature",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Tags feature",
+    "tags": [],
+    "uri": "Features\\Tags.feature"
+  }
+]
