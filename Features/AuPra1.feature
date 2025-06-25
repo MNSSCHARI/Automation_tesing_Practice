@@ -8,3 +8,4 @@ Feature: Validate the Valid Cred
     And I click on the login button
 
     Then I should see a logout button
+    

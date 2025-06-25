@@ -30,6 +30,7 @@ test('Sign In Page', async ({ page }) => {
     //another way to retrive the data and print
     console.log(await page.locator('.error').textContent());
     await expect(page.locator('.error')).toContainText('Incorrect');
+
     
 
 });
